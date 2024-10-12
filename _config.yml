@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/favicons/mypic.jpeg
+avatar: https://raw.githubusercontent.com/InfinitySoftware-House/bytelab.github.io/8cb535b83d58c8587e78177af224ba711f0227f7/avatar.jpeg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
