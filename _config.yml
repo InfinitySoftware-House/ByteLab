@@ -150,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "/bytelab.github.io"
+baseurl: "/ByteLab"
 
 # ------------ The following options are not recommended to be modified ------------------
 
