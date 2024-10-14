@@ -14,3 +14,5 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "jekyll-google_search_console_verification_file", "~> 1.1", :group => :jekyll_plugins
+
+gem 'jekyll-seo-tag'
