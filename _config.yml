@@ -226,6 +226,7 @@ jekyll-archives:
 
 plugins:
   - jekyll-google_search_console_verification_file
+  - jekyll-miniaudio
 
 google_search_console:
   verification_file_code: 7e241423762f77c3
