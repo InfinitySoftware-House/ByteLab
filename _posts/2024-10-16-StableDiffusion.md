@@ -43,17 +43,17 @@ The diffusion process can be described as a **Markov Chain**:
 - Let \( x_t \) represent the corrupted image at time step \( t \), where \( t \) ranges from 0 to a maximum value \( T \).
 - The process is defined as:  
 
-$
+$$
 q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{\alpha_t} x_{t-1}, (1-\alpha_t) I)
-$
+$$
 
 where \( \alpha_t \) controls the noise level at each step.
 
 In the reverse process, the model predicts \( \epsilon \) (the added noise), effectively denoising the image:
 
-$
+$$
 x_{t-1} = \frac{1}{\sqrt{\alpha_t}} \left( x_t - (1 - \alpha_t) \epsilon_\theta(x_t, t) \right)
-$
+$$
 
 ---
 
@@ -100,9 +100,9 @@ Training Stable Diffusion involves two key steps: **training the VAE** and **tra
   
 The loss function typically used is the **mean squared error (MSE)** between the predicted noise and the actual noise added to the image:
 
-$
+$$
 \mathcal{L}_{\text{simple}} = \mathbb{E}_{t,x_0,\epsilon} \left[ \lVert \epsilon - \epsilon_\theta(x_t, t) \rVert^2 \right]
-$
+$$
 
 ---
 
