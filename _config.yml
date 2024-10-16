@@ -16,7 +16,7 @@ timezone:
 
 title: ByteLab # the main title
 
-tagline: Tech and Investments by Francesco Cogliandro. # it will display as the subtitle
+tagline: Tech, Investments, and Programming. # the tagline below the title
 
 description: >- # used by seo meta and the atom feed
   My personal blog, interested in programming, technology, and investments.
