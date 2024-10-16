@@ -39,17 +39,17 @@ Diffusion models belong to the family of generative models designed to learn dat
 ### Mathematical Foundation
 
 The diffusion process can be described as a **Markov Chain**:
-- Let \( x_0 \) be the original data (image).
-- Let \( x_t \) represent the corrupted image at time step \( t \), where \( t \) ranges from 0 to a maximum value \( T \).
+- Let $\( x_0 \)$ be the original data (image).
+- Let $\( x_t \)$ represent the corrupted image at time step $\( t \)$, where $\( t \)$ ranges from 0 to a maximum value $\( T \)$.
 - The process is defined as:  
 
 $$
 q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{\alpha_t} x_{t-1}, (1-\alpha_t) I)
 $$
 
-where \( \alpha_t \) controls the noise level at each step.
+where $\( \alpha_t \)$ controls the noise level at each step.
 
-In the reverse process, the model predicts \( \epsilon \) (the added noise), effectively denoising the image:
+In the reverse process, the model predicts $\( \epsilon \)$ (the added noise), effectively denoising the image:
 
 $$
 x_{t-1} = \frac{1}{\sqrt{\alpha_t}} \left( x_t - (1 - \alpha_t) \epsilon_\theta(x_t, t) \right)
